@@ -5,6 +5,7 @@ const GET_TASK_CARD = gql`
     tasks(input: { status: $status }) {
       assignee {
         avatar
+        fullName
       }
       tags
       dueDate

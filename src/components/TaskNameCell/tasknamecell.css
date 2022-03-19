@@ -1,0 +1,48 @@
+.taskNameCell {
+  display: flex;
+  width: 500px;
+  height: 56px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--Neutral-4);
+  border: 1px solid var(--Neutral-3);
+  font-family: SF-Pro-Display-Regular;
+  color: var(--Neutral-1);
+}
+
+.taskNameCell__text {
+  display: flex;
+  align-items: center;
+}
+
+.taskNameCell__reactions {
+  display: flex;
+  width: 162px;
+  justify-content: space-evenly;
+}
+
+.taskNameCell__item {
+  display: flex;
+}
+
+.taskNameCell__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.taskNameCell__name {
+  display: flex;
+}
+.coments__text {
+  margin-right: 5.33px;
+}
+.shared__text {
+  margin-right: 6px;
+}
+
+.details__text {
+  margin-right: 4px;
+}
+.order {
+  margin-right: 8px;
+}

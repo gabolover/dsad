@@ -1,9 +1,7 @@
-import './button.css'
-function Button(props) {
+import "./button.css";
+function Button({ img, fun, active }) {
+  console.log(active);
+  return <input type="image" className="button" src={img} onClick={fun} />;
+}
 
-    return (
-       <input type="image" className="button" src={props.img}/>       
-     );
-   }
-   
-   export default Button;
+export default Button;

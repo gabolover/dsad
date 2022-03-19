@@ -4,7 +4,7 @@ import { gql } from "@apollo/client";
 import { useQuery } from "@apollo/client";
 import GET_TASK_CARD from "../../graphql/getTaskCard";
 
-const NUMBER_ARRAY = {
+export const NUMBER_ARRAY = {
   ZERO: 0,
   ONE: 1,
   TWO: 2,

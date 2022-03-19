@@ -1,0 +1,32 @@
+.taskBarCell {
+  background-color: var(--Neutral-4);
+  width: 1036px;
+  height: 56px;
+  display: flex;
+  font-family: SF-Pro-Display-Regular;
+  color: var(--Neutral-1);
+}
+.taskBarCell__cell {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  border: 1px solid var(--Neutral-3);
+  padding: 4px 16px;
+}
+.taskBarCell--taskName {
+  width: 500px;
+  border-radius: 4px 0px 0px 4px;
+}
+.taskBarCell--taskTag {
+  width: 168px;
+}
+.taskBarCell--estimate {
+  width: 140px;
+}
+.taskBarCell--assigned {
+  width: 178px;
+}
+.taskBarCell--dueDate {
+  width: 163px;
+  border-radius: 0px 4px 4px 0px;
+}

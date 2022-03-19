@@ -1,0 +1,35 @@
+.taskCell {
+  width: 1036px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 4px 16px 4px 16px;
+  font-family: SF-Pro-Display-Bold;
+  color: var(--Neutral-1);
+  justify-content: space-between;
+  background-color: var(--Neutral-4);
+  border-radius: 4px 4px 0px 0px;
+  border: 1px solid var(--Neutral-3);
+}
+img {
+  cursor: pointer;
+}
+.taskCell__text {
+  width: 176px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  margin: 0px 8px;
+}
+.taskCell__iconContainer {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+.iconContainer {
+  display: flex;
+}
+.taskContainer {
+  display: flex;
+}

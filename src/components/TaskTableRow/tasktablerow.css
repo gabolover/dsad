@@ -1,0 +1,10 @@
+.taskTableRow {
+  display: flex;
+  font-family: SF-Pro-Display-Regular;
+  color: var(--Neutral-1);
+  background-color: var(--Neutral-4);
+}
+
+.taskRow__avatar {
+  width: 30px;
+}

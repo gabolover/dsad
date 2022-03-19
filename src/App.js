@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./App.css";
 import Nav from "./components/Nav/Nav";
 import ButtonsBar from "./components/ButtonsBar/ButtonsBar";
@@ -8,7 +9,7 @@ import TaskColumnContainer from "./components/TaskColumnContainer/TaskColumnCont
 import GET_USERS from "./graphql/getUsers";
 import { useQuery, gql } from "@apollo/client";
 import moment from "moment";
-import TaskBar from "./components/TaskBar/TaskBar";
+import TaskRowContainer from "./components/TaskRowContainer/TaskRowContainer";
 export const nowDate = moment();
 
 /* import { client } from "./client";
@@ -16,23 +17,26 @@ console.log(client);
  */
 
 function App() {
+  const [view, setView] = useState(true);
   const { data, error, loading } = useQuery(GET_USERS);
   if (loading) return <p>loading</p>;
   if (error) return <p>error... {error.message}</p>;
+
   return (
     <div className="App">
-      <ApplicationSidebar />
-      <Main />
+      <ApplicationSidebar view={view} setView={setView} />
+      <Main view={view} setView={setView} />
     </div>
   );
 }
 
-function Main() {
+function Main({ view, setView }) {
   return (
     <div className="main">
       <Nav />
-      <ButtonsBar />
-      <TaskColumnContainer />
+      <ButtonsBar view={view} setView={setView} />
+
+      {view ? <TaskColumnContainer /> : <TaskRowContainer />}
     </div>
   );
 }

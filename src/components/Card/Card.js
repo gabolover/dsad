@@ -11,7 +11,7 @@ const Card = ({ title, tags, avatar, time, points }) => {
   let timeTask = time.split("T");
   timeTask.splice(1);
   let date = moment(timeTask.toString());
-  var dateTask = date.format("D MMMM, YYYY");
+  let dateTask = date.format("D MMMM, YYYY");
   let now = nowDate.format();
 
   const dateCard = () => {
@@ -25,6 +25,16 @@ const Card = ({ title, tags, avatar, time, points }) => {
       return "late";
     }
   };
+
+  const dateNow = () => {
+    if (date.diff(now, "days") === 0) {
+      if (date.diff(now, "hours") > 0) return dateTask;
+      return (dateTask = "TODAY");
+    } else if (date.diff(now, "days") === -1) {
+      return (dateTask = "Yesterday");
+    }
+    return dateTask;
+  };
   return (
     <div className="card">
       <div className="card__project-info">
@@ -33,7 +43,7 @@ const Card = ({ title, tags, avatar, time, points }) => {
       </div>
       <div className="timer">
         <p className="card__text body--m">{points} Points</p>
-        <TagTimer logo={timer} text={dateTask} type={dateCard()} />
+        <TagTimer logo={timer} text={dateNow()} type={dateCard()} />
       </div>
       <div className="tags">
         {tags.map((tag) => (
