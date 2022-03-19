@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# ravn-challenge
+ This project is the creation of a crud consuming an API, using the reactjs framework
+ 
+ This is the main application window
+![image](https://user-images.githubusercontent.com/64295965/159102509-5d044ffc-04ff-4944-98cd-f65f6687663d.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+While waiting for the response from the api the following text is displayed
+![image](https://user-images.githubusercontent.com/64295965/159102721-b30532c5-cdf9-4b42-b1b6-42ab9144f78a.png)
 
-In the project directory, you can run:
 
-### `npm start`
+It has a scroll bar to scroll and be able to observe all the task columns (backlog, canceled, done, in progress, TODO)
+![image](https://user-images.githubusercontent.com/64295965/159103077-e4ab4c41-7496-4eea-b365-29ab912a996a.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![image](https://user-images.githubusercontent.com/64295965/159103148-1c53b680-dab6-4e01-96b0-bd317d410e3f.png)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In the cards you can see the avatars of the people, the estimated points, the title of the task, the tags (android, rails, node_js, react, ios), and the corresponding due date of each task with its identifying color (white: on time, yellow: less than 2 days, red: date is older than current date)
 
-### `npm run build`
+![image](https://user-images.githubusercontent.com/64295965/159103173-ff15e069-40ee-490d-856d-784739c7ecd5.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+default search bar
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](https://user-images.githubusercontent.com/64295965/159103451-0f3aef22-d332-456d-ab70-2ef79ea51c9e.png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Search bar selected
+The placeholder disappears and the icon appears to close the search bar
+![image](https://user-images.githubusercontent.com/64295965/159103471-41b87e89-a3c9-43d7-b5d5-8f0fcd6ad029.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+When hovering on the dashboard items, the items change color as shown
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![image](https://user-images.githubusercontent.com/64295965/159103664-b86ccb01-a59c-4614-b0bb-6bcc0e0206e0.png)
 
-## Learn More
+![image](https://user-images.githubusercontent.com/64295965/159103606-f08f9db0-7445-46c4-8343-c0da174e9ef9.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![image](https://user-images.githubusercontent.com/64295965/159103733-d44bd6d1-4844-4006-ac6e-ab42050c4f8a.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Selecting an item shows that its color will change.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![image](https://user-images.githubusercontent.com/64295965/159103787-18ad66f8-3a08-44eb-b6d5-714f7394d821.png)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
