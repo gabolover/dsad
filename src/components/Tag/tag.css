@@ -1,0 +1,35 @@
+.tag {
+  background-color: rgba(148, 151, 154, 0.1);
+  height: 32px;
+  width: 92px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag > p {
+  font-family: SF-Pro-Display-Bold;
+}
+.ios,
+.node_js {
+  color: var(--Secondary-4);
+  background: rgba(112, 178, 82, 0.1);
+  width: 92px;
+}
+
+.android {
+  color: var(--Tertiary-4);
+  background: rgba(229, 180, 84, 0.1);
+  width: 103px;
+}
+
+.react {
+  color: var(--Blue);
+  background: rgba(47, 97, 191, 0.1);
+}
+
+.rails {
+  color: var(--Primary-4);
+  background: rgba(218, 88, 75, 0.1);
+}

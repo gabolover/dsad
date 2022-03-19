@@ -1,0 +1,14 @@
+.task-column {
+  display: flex;
+  flex-direction: column;
+  width: 348px;
+
+  align-items: flex-start;
+  margin-right: 32px;
+  margin-top: 16px;
+}
+
+.project-info {
+  color: var(--Neutral-1);
+  font-family: SF-Pro-Display-Bold;
+}

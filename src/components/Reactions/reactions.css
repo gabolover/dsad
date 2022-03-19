@@ -1,0 +1,52 @@
+.reactions-shared__text,
+.reactions-comments__text {
+  font-family: SF-Pro-Display-Regular;
+  color: var(--Neutral-1);
+}
+.reactions {
+  display: flex;
+  align-items: center;
+  width: 316px;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  height: 32px;
+}
+
+.reactions__avatar {
+  height: 32px;
+  border-radius: 15px;
+}
+.reactions__reactions {
+  display: flex;
+  width: 106px;
+  height: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+.reactions__reactions-shared {
+  display: flex;
+  width: 29px;
+  height: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+.reactions__reactions-comments {
+  display: flex;
+  width: 29px;
+  height: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+.reactions__attachIcon {
+  width: 16px;
+  height: 16px;
+}
+.reactions-shared__icon {
+  width: 12px;
+  height: 13.33px;
+}
+.reactions-comments__icon {
+  width: 13.33px;
+  height: 13.33px;
+}

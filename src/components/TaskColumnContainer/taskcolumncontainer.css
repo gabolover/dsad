@@ -1,0 +1,6 @@
+.task-column-container {
+  display: flex;
+  width: 1036px;
+  overflow-x: scroll;
+  margin-left: 32px;
+}

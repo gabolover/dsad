@@ -1,0 +1,33 @@
+.tagTimer {
+  display: flex;
+  align-items: center;
+  background-color: rgba(148, 151, 154, 0.1);
+  text-transform: uppercase;
+  height: 32px;
+  border-radius: 4px;
+  flex-direction: row;
+  font-family: SF-Pro-Display-Bold;
+  padding: 4px 16px;
+}
+
+.tagTimer > p {
+  margin-left: 9.75px;
+}
+
+.onTime {
+  color: var(--Neutral-1);
+}
+
+.less {
+  color: var(--Tertiary-4);
+  background: rgba(229, 180, 84, 0.1);
+  filter: brightness(0) saturate(100%) invert(95%) sepia(6%) saturate(4927%)
+    hue-rotate(323deg) brightness(92%) contrast(94%);
+}
+
+.late {
+  color: var(--Primary-4);
+  background: rgba(218, 88, 75, 0.1);
+  filter: brightness(0) saturate(100%) invert(52%) sepia(57%) saturate(2864%)
+    hue-rotate(330deg) brightness(91%) contrast(87%);
+}
