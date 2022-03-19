@@ -1,5 +1,6 @@
 # ravn-challenge
- This project is the creation of a crud consuming an API, using the reactjs framework
+ This project is the creation of a crud consuming an API, using the reactjs framework, 
+ Apollo Client was used to query GraphQL APIs and the moment js library for dates
  
  This is the main application window
 ![image](https://user-images.githubusercontent.com/64295965/159102509-5d044ffc-04ff-4944-98cd-f65f6687663d.png)
