@@ -1,6 +1,6 @@
 import TaskNameCell from "../TaskNameCell/TaskNameCell";
 import TaskCell from "../TaskCell/TaskCell";
-
+import defaultAvatar from "../../assets/images/avatar.svg";
 import "../TaskBarCell/taskbarcell.css";
 import "./tasktablerow.css";
 import moment from "moment";
@@ -54,7 +54,11 @@ const TaskTableRow = ({ title, order, points, assignee, time, tags }) => {
         <p className="estimate__text">{points} Points</p>
       </div>
       <div className="taskBarCell__cell taskBarCell--assigned task--assigned">
-        <img className="taskRow__avatar" src={assignee.avatar} alt="avatar" />
+        <img
+          className="taskRow__avatar"
+          src={!assignee.avatar ? defaultAvatar : assignee.avatar}
+          alt="avatar"
+        />
         <p className="assigned__text">{assignee.fullName}</p>
       </div>
       <div className="taskBarCell__cell taskBarCell--dueDate">
