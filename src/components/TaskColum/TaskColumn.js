@@ -41,6 +41,8 @@ const TaskColumn = ({ status }) => {
           avatar={item.assignee.avatar}
           time={item.dueDate}
           points={NUMBER_ARRAY[`${item.pointEstimate}`]}
+          id={item.id}
+          data={data}
         />
       ))}
     </div>

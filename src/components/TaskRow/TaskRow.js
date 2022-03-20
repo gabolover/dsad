@@ -25,6 +25,7 @@ const TaskRow = ({ status }) => {
           assignee={item.assignee}
           time={item.dueDate}
           key={item.name}
+          tags={item.tags}
         />
       ))}
     </div>

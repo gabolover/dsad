@@ -13,6 +13,7 @@ const GET_TASK_CARD = gql`
       createdAt
       status
       name
+      id
     }
   }
 `;

@@ -8,7 +8,7 @@ import taskIconBarActive from "../../assets/images/taskIconBarActive.svg";
 import Button from "../Button/Button";
 import "./buttonsBar.css";
 
-function ButtonsBar({ view, setView }) {
+function ButtonsBar({ view, setView, setModal }) {
   const [active, setActive] = useState(true);
   const taskRow = () => {
     setView(false);
@@ -16,8 +16,10 @@ function ButtonsBar({ view, setView }) {
   };
   const taskDash = () => {
     setView(true);
-    console.log("presionado");
     setActive(true);
+  };
+  const showModal = () => {
+    setModal(true);
   };
 
   return (
@@ -36,7 +38,7 @@ function ButtonsBar({ view, setView }) {
           active={view}
         />
       </div>
-      <Button img={plusIcon} />
+      <Button img={plusIcon} fun={showModal} />
     </div>
   );
 }

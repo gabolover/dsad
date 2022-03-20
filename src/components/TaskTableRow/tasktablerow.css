@@ -8,3 +8,30 @@
 .taskRow__avatar {
   width: 30px;
 }
+
+.moreTags {
+  background: rgba(148, 151, 154, 0.1);
+  border-radius: 4px;
+  width: 52px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.OnTime {
+  color: var(--Neutral-1);
+}
+
+.Less {
+  color: var(--Tertiary-4);
+}
+
+.Late {
+  color: var(--Primary-4);
+}
+.taskRow__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 15px;
+}

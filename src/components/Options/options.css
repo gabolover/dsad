@@ -1,0 +1,23 @@
+.options {
+  display: flex;
+  flex-direction: column;
+  width: 138px;
+  height: 88px;
+  background-color: var(--Neutral-4);
+  border: 1px solid var(--Neutral-2);
+  border-radius: 8px;
+  position: relative;
+  left: 225px;
+  top: -166px;
+  padding: 8px;
+}
+.optionsItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: SF-Pro-Display-Regular;
+  color: var(--Neutral-1);
+  margin-bottom: 14px;
+  color: var(--Neutral-1);
+  cursor: pointer;
+}

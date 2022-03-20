@@ -1,0 +1,34 @@
+.dropDownAssignee {
+  width: 239px;
+  height: 432px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Neutral-3);
+  border: 1px solid #94979a;
+  border-radius: 8px;
+  padding: 8px 0px 0px;
+  font-family: SF-Pro-Display-Regular;
+  color: var(--Neutral-1);
+  position: fixed;
+  top: 264px;
+  right: 560px;
+}
+.assignee__text {
+  color: var(--Neutral-2);
+  font-family: SF-Pro-Display-Bold;
+  margin-left: 16px;
+}
+.dropDownAssigneeItem {
+  display: flex;
+  align-items: center;
+  padding: 4px 16px;
+  width: 239px;
+  height: 56px;
+  cursor: pointer;
+}
+
+.dropDownAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 15px;
+}

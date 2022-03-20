@@ -2,11 +2,15 @@ import attachIcon from "../../assets/images/attachIcon.svg";
 import sharedIcon from "../../assets/images/sharedIcon.svg";
 import commentsIcon from "../../assets/images/commentsIcon.svg";
 import "./reactions.css";
-
+import avatarDefault from "../../assets/images/avatar.svg";
 const Reactions = ({ avatar }) => {
   return (
     <div className="reactions">
-      <img className="reactions__avatar" src={avatar} alt="avatar" />
+      <img
+        className="reactions__avatar"
+        src={!avatar ? avatarDefault : avatar}
+        alt="avatar"
+      />
       <div className="reactions__reactions">
         <img
           src={attachIcon}

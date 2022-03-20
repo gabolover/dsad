@@ -24,6 +24,7 @@
 .text {
   display: flex;
   color: var(--Neutral-2);
+
   font-family: SF-Pro-Display-Bold;
   width: 100%;
 }
@@ -32,4 +33,14 @@
   width: 18px;
   margin-left: 0;
   margin-right: 19px;
+}
+
+.iconActive,
+.textActive {
+  color: var(--Primary-4);
+}
+
+.active:hover > .icon,
+.active:hover > p {
+  filter: none;
 }

@@ -6,13 +6,16 @@ import Reactions from "../Reactions/Reactions";
 import "./card.css";
 import moment from "moment";
 import { nowDate } from "../../App";
+import Options from "../Options/Options";
+import React, { useState } from "react";
 
-const Card = ({ title, tags, avatar, time, points }) => {
+const Card = ({ title, tags, avatar, time, points, id, data }) => {
   let timeTask = time.split("T");
   timeTask.splice(1);
   let date = moment(timeTask.toString());
   let dateTask = date.format("D MMMM, YYYY");
   let now = nowDate.format();
+  const [optionsVisible, setOptionsVisible] = useState(false);
 
   const dateCard = () => {
     if (date.diff(now, "days") === 0) {
@@ -39,7 +42,12 @@ const Card = ({ title, tags, avatar, time, points }) => {
     <div className="card">
       <div className="card__project-info">
         <p className="card__text body--l">{title}</p>
-        <img className="card__icon" src={projectIcon} alt="cardIcon" />
+        <img
+          className="card__icon"
+          src={projectIcon}
+          alt="cardIcon"
+          onClick={() => setOptionsVisible(true)}
+        />
       </div>
       <div className="timer">
         <p className="card__text body--m">{points} Points</p>
@@ -51,6 +59,8 @@ const Card = ({ title, tags, avatar, time, points }) => {
         ))}
       </div>
       <Reactions avatar={avatar} />
+
+      {optionsVisible && <Options id={id} dataP={data} />}
     </div>
   );
 };

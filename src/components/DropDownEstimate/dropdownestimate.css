@@ -1,0 +1,33 @@
+.dropDownEstimate {
+  display: flex;
+  flex-direction: column;
+  width: 122px;
+  height: 208px;
+  background-color: var(--Neutral-3);
+  padding: 8px 0px;
+  position: fixed;
+  top: 262px;
+  right: 830px;
+  border: 1px solid #94979a;
+  border-radius: 8px;
+  z-index: 5;
+}
+
+.dropDownEstimateItem {
+  display: flex;
+  padding: 4px 16px;
+  height: 32px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.dropDownEstimate__text {
+  height: 32px;
+  color: var(--Neutral-2);
+  text-align: center;
+  font-family: SF-Pro-Display-Bold;
+}
+
+.dropDownEstimateItem__text {
+  color: var(--Neutral-1);
+}

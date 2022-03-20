@@ -1,0 +1,34 @@
+.dropDownLabel {
+  display: flex;
+  width: 231px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  padding: 8px 0px 8px 0px;
+  border: 1px solid var(--Neutral-2);
+  background-color: var(--Neutral-3);
+  font-family: SF-Pro-Display-Regular;
+  color: var(--Neutral-1);
+  position: fixed;
+  top: 269px;
+  right: 492px;
+}
+
+.dropDownLabelItem {
+  display: flex;
+  align-items: center;
+  width: 231px;
+  justify-content: flex-start;
+}
+.dropDownLabelItem__icon {
+  margin-right: 11px;
+  margin-left: 19px;
+}
+.dropDownLabel__title {
+  display: flex;
+  width: 231px;
+  margin-left: 32px;
+  height: 32px;
+  color: var(--Neutral-2);
+  font-family: SF-Pro-Display-Bold;
+}
