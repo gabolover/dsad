@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import dueDateIcon from "../../assets/images/dueDateIcon.svg";
 import assigneeIcon from "../../assets/images/assigneeIcon.svg";
 import estimateIcon from "../../assets/images/estimateIcon.svg";
@@ -25,6 +25,11 @@ const Modal = ({ setModal, users }) => {
   const [dueDateVisible, setDueDateVisible] = useState(false);
   const [input, setInput] = useState("");
   const user = users;
+
+  if (data != undefined) {
+    window.location.reload();
+  }
+
   const modalDisabled = () => {
     setModal(false);
   };
@@ -55,7 +60,7 @@ const Modal = ({ setModal, users }) => {
               input: {
                 name: `${input}`,
                 tags: [`${label}`],
-                status: "TODO",
+                status: "BACKLOG",
                 pointEstimate: `${estimate[0]}`,
                 dueDate: `${moment(dueDate).format()}`,
                 assigneeId: `${assignee.id}`,
