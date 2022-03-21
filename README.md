@@ -1,6 +1,6 @@
 # ravn-challenge
  This project is the creation of a crud consuming an API, using the reactjs framework, 
- Apollo Client was used to query GraphQL APIs and the moment js library for dates
+ Apollo Client was used to query GraphQL APIs and the moment js library for dates, and the React Datepicker package to use the calendar
  
  This is the main application window
 ![image](https://user-images.githubusercontent.com/64295965/159102509-5d044ffc-04ff-4944-98cd-f65f6687663d.png)
@@ -44,6 +44,62 @@ Selecting an item shows that its color will change.
 
 
 ![image](https://user-images.githubusercontent.com/64295965/159103787-18ad66f8-3a08-44eb-b6d5-714f7394d821.png)
+
+
+
+clicking on the MY TASK item in the sidebar changes how the main window is shown
+![image](https://user-images.githubusercontent.com/64295965/159183719-6936e835-ee8e-49b5-ae86-7eea96610998.png)
+
+
+#ADD TASKS
+
+Selecting the plus icon shows the following modal to add tasks
+
+![image](https://user-images.githubusercontent.com/64295965/159183912-89971fb7-1a14-4359-9455-7e6fc15666c5.png)
+
+![image](https://user-images.githubusercontent.com/64295965/159183921-2a777ac2-c051-4dce-9a05-ca80bf20d787.png)
+
+
+fill in form fields
+
+![image](https://user-images.githubusercontent.com/64295965/159184051-82ed095a-d678-4732-934a-bbaa4fb29047.png)
+
+![image](https://user-images.githubusercontent.com/64295965/159184069-a849fe79-5e64-41eb-8b39-85fe2c2bd173.png)
+
+![image](https://user-images.githubusercontent.com/64295965/159184082-9f28df6d-6810-4166-a7a3-c78b6d92ca57.png)
+
+![image](https://user-images.githubusercontent.com/64295965/159184094-58f462bd-5bbb-4de1-b500-0bbdb8c815a5.png)
+
+![image](https://user-images.githubusercontent.com/64295965/159184105-1267ff18-2717-4d3a-aa85-3cbaa6233712.png)
+
+After pressing the create button, we must refresh the page to see the new tasks
+
+![image](https://user-images.githubusercontent.com/64295965/159184126-1b603c86-0d38-4623-90ed-f0387af93ea1.png)
+
+
+
+![image](https://user-images.githubusercontent.com/64295965/159184332-2b8fcb98-1a48-47bb-be28-d4b7bcf260ed.png)
+
+![image](https://user-images.githubusercontent.com/64295965/159184423-f10d6314-9d96-490e-8030-2ac03c93e5e1.png)
+
+Note:
+By default, tasks are created in the pending work status as there is no option to select the status
+
+
+#DELETE TASKS
+Clicking the options icon (3 dots in the top right corner) shows the options modal
+
+![image](https://user-images.githubusercontent.com/64295965/159185043-a58a5746-070d-41ca-bd2e-cf1a79af14aa.png)
+
+Click on the Delete option
+
+![image](https://user-images.githubusercontent.com/64295965/159185114-58adb0ac-1a8b-4dc8-a76f-1df8ccd18024.png)
+
+The page is automatically refreshed and now the deleted task is no longer visibleç
+
+![image](https://user-images.githubusercontent.com/64295965/159185254-ad8b5244-4a89-43a7-9ad3-bf5fda6351e7.png)
+
+
 
 
 
